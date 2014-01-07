@@ -3,7 +3,16 @@
 
 	<context:annotation-config />
 	<context:component-scan base-package="com.manish.spring.firstexample.controller" />
-	
+	<bean id="measurementInterceptor" class="com.manish.spring.firstexample.interceptor.MeasurementInterceptor"></bean>
+	<bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping">
+		<property name="order" value="1"/>
+		<property name="interceptors">
+			<list>
+				<ref bean="measurementInterceptor"/>
+			</list>
+		</property>
+	</bean>
+	<bean id="summaryReportInterceptor" class="com.manish.spring.firstexample.interceptor.SummaryReportInterceptor"/>
 	<!-- Database configurations  -->
 	<bean
 		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">

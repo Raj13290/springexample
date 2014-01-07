@@ -39,5 +39,7 @@
 		</tbody>
 	</table>
 	</c:if>
+	
+	Handling time: ${handlingTime} miliseconds.
 </body>
 </html>

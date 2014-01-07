@@ -13,6 +13,7 @@
 <a href="allBooks">Get All Books</a>
 
 <a href="admin/addNewBook">Add New Book</a>
-
+Handling time: ${handlingTime} miliseconds.
+Hanlding time summary: ${handlingTime-summary} miliseconds.
 </body>
 </html>

@@ -27,5 +27,6 @@
 			</tr>
 		</table>
 	</form:form>
+	Handling time: ${handlingTime} miliseconds.
 </body>
 </html>
